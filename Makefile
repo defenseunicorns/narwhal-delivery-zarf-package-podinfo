@@ -100,3 +100,8 @@ fix-cache-permissions: ## Fixes the permissions on the pre-commit cache
 .PHONY: autoformat
 autoformat: ## Update files with automatic formatting tools. Uses Docker for maximum compatibility.
 	$(MAKE) _runhooks HOOK="" SKIP="check-added-large-files,check-merge-conflict,detect-aws-credentials,detect-private-key,check-yaml,golangci-lint,terraform_checkov,terraform_tflint,renovate-config-validator"
+
+.PHONY: build-zarf-package
+build-zarf-package: ## Build the Zarf Package
+	docker run ${ALL_THE_DOCKER_ARGS} \
+		bash -c 'zarf package create --confirm'
