@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.0.2](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/compare/v0.0.1...v0.0.2) (2023-09-07)
+
+
+### Miscellaneous Chores
+
+* fix pre-commit checks ([0af6ca2](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/commit/0af6ca28279da20d72d40a37306b66790725286c))
+* fix release-please-config.json ([a35443f](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/commit/a35443f7d1e778e3ae9c7f1b3f73c3abf8f8b1a6))
+* more work on auto-publish on tag push ([73da9c7](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/commit/73da9c72b98bdac9878e1600068d2732b6026090))
+* work on getting automatic build and publish to work ([462de7d](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/commit/462de7ddf0dfd547887fa14e6c74fda9906bd81d))
+
 ## 0.0.1 (2023-09-07)
 
 
