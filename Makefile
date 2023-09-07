@@ -25,6 +25,8 @@ ALL_THE_DOCKER_ARGS := $(TTY_ARG) --rm \
 	-e GOCACHE=/root/.cache/go-build \
 	-e TF_PLUGIN_CACHE_MAY_BREAK_DEPENDENCY_LOCK_FILE=true \
 	-e TF_PLUGIN_CACHE_DIR=/root/.terraform.d/plugin-cache \
+	-e "SKIP=$(SKIP)" \
+	-e "PRE_COMMIT_HOME=/app/.cache/pre-commit" \
 	-e AWS_REGION \
 	-e AWS_DEFAULT_REGION \
 	-e AWS_ACCESS_KEY_ID \
