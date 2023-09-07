@@ -32,7 +32,7 @@
       "skip-github-release": false,
       "versioning": "default",
       "extra-files": [
-        "zarf.yaml"
+        "zarf-config.yaml"
       ]
     }
   }
