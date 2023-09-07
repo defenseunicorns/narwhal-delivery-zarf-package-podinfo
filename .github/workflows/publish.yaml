@@ -40,5 +40,5 @@ jobs:
         env:
           REGISTRY1_USERNAME: ${{ secrets.REGISTRY1_USERNAME }}
           REGISTRY1_PASSWORD: ${{ secrets.REGISTRY1_PASSWORD }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAT }}
         run: make build-zarf-package publish-zarf-package
