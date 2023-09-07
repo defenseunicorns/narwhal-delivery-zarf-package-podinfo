@@ -1,0 +1,30 @@
+  kind: ZarfPackageConfig
+  metadata:
+    name: podinfo
+    description: Zarf package of Podinfo meant to be used as a reference for how to package and deploy a mission app
+    # x-release-please-start-version
+    version: "0.0.1"
+    # x-release-please-end
+  constants:
+    - name: CHART_VERSION
+      # renovate: datasource=git-tags depName=https://repo1.dso.mil/big-bang/apps/sandbox/podinfo.git versioning=loose
+      value: 6.0.0-bb.7
+    - name: IMAGE_REPO
+      value: ghcr.io/stefanprodan/podinfo
+    - name: IMAGE_VERSION
+      # renovate: datasource=github-tags depName=stefanprodan/podinfo
+      value: 6.3.5
+  components:
+    - name: podinfo
+      description: "Tiny web application that showcases best practices of running microservices"
+      required: true
+      charts:
+        - name: podinfo
+          version: "###ZARF_CONST_CHART_VERSION###"
+          namespace: podinfo
+          url: https://repo1.dso.mil/big-bang/apps/sandbox/podinfo.git
+          gitPath: chart
+          valuesFiles:
+            - values.yaml
+      images:
+        - "###ZARF_CONST_IMAGE_REPO:###ZARF_CONST_IMAGE_VERSION###"
