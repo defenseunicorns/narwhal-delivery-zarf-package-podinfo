@@ -105,5 +105,21 @@ autoformat: ## Update files with automatic formatting tools. Uses Docker for max
 
 .PHONY: build-zarf-package
 build-zarf-package: ## Build the Zarf Package
+ifndef REGISTRY1_USERNAME
+	$(error environment variable REGISTRY1_USERNAME is not set)
+endif
+ifndef REGISTRY1_PASSWORD
+	$(error environment variable REGISTRY1_PASSWORD is not set)
+endif
 	docker run ${ALL_THE_DOCKER_ARGS} \
-		bash -c 'zarf package create --confirm'
+		bash -c 'zarf tools registry login registry1.dso.mil -u ${REGISTRY1_USERNAME} -p ${REGISTRY1_PASSWORD} \
+			&& zarf package create --confirm'
+
+.PHONY: publish-zarf-package
+publish-zarf-package: ## Publish the Zarf Package
+ifndef GITHUB_TOKEN
+	$(error environment variable GITHUB_TOKEN is not set)
+endif
+	docker run ${ALL_THE_DOCKER_ARGS} \
+		bash -c 'zarf tools registry login ghcr.io -u dummy -p ${GITHUB_TOKEN} \
+			&& zarf package publish zarf-package-*.tar.zst oci://ghcr.io/defenseunicorns/narwhal-delivery-zarf-package-podinfo'

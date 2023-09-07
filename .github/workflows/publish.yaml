@@ -5,4 +5,40 @@ on:
     tags:
       - "*"
 
+permissions:
+  id-token: write
+  contents: read
 
+defaults:
+  run:
+    # We need -e -o pipefail for consistency with GitHub Actions' default behavior
+    shell: bash -e -o pipefail {0}
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Init docker cache
+        id: init-docker-cache
+        uses: actions/cache@v3
+        with:
+          path: "${{ github.workspace }}/.cache/docker"
+          key: "docker|${{hashFiles('.env')}}"
+
+      - name: Docker save build harness
+        if: steps.init-docker-cache.outputs.cache-hit != 'true'
+        run: make docker-save-build-harness
+
+      - name: Load build harness
+        shell: bash -e -o pipefail {0}
+        run: make docker-load-build-harness
+
+      - name: Build and publish the package
+        env:
+          REGISTRY1_USERNAME: ${{ secrets.REGISTRY1_USERNAME }}
+          REGISTRY1_PASSWORD: ${{ secrets.REGISTRY1_PASSWORD }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: make build-zarf-package publish-zarf-package

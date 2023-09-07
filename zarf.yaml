@@ -2,29 +2,28 @@
   metadata:
     name: podinfo
     description: Zarf package of Podinfo meant to be used as a reference for how to package and deploy a mission app
-    # x-release-please-start-version
-    version: "0.0.1"
-    # x-release-please-end
+    version: "###ZARF_PKG_TMPL_PACKAGE_VERSION###"
   constants:
+    - name: CHART_REPO
+      value: "###ZARF_PKG_TMPL_CHART_REPO###"
     - name: CHART_VERSION
-      # renovate: datasource=git-tags depName=https://repo1.dso.mil/big-bang/apps/sandbox/podinfo.git versioning=loose
-      value: 6.0.0-bb.5
+      value: "###ZARF_PKG_TMPL_CHART_VERSION###"
     - name: IMAGE_REPO
-      value: ghcr.io/stefanprodan/podinfo
+      value: "###ZARF_PKG_TMPL_IMAGE_REPO###"
     - name: IMAGE_VERSION
-      # renovate: datasource=github-tags depName=stefanprodan/podinfo
-      value: 6.4.1
+      value: "###ZARF_PKG_TMPL_IMAGE_VERSION###"
   components:
     - name: podinfo
       description: "Tiny web application that showcases best practices of running microservices"
       required: true
       charts:
         - name: podinfo
-          version: "###ZARF_CONST_CHART_VERSION###"
           namespace: podinfo
-          url: https://repo1.dso.mil/big-bang/apps/sandbox/podinfo.git
-          gitPath: chart
+          localPath: podinfo-main/chart
+#          url: "###ZARF_PKG_TMPL_CHART_REPO###"
+          version: "###ZARF_PKG_TMPL_CHART_VERSION###"
+#          gitPath: chart
           valuesFiles:
             - values.yaml
       images:
-        - "###ZARF_CONST_IMAGE_REPO:###ZARF_CONST_IMAGE_VERSION###"
+        - "###ZARF_PKG_TMPL_IMAGE_REPO###:###ZARF_PKG_TMPL_IMAGE_VERSION###"
