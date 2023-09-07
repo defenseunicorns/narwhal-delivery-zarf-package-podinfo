@@ -13,7 +13,7 @@
       value: ghcr.io/stefanprodan/podinfo
     - name: IMAGE_VERSION
       # renovate: datasource=github-tags depName=stefanprodan/podinfo
-      value: 6.3.5
+      value: 6.4.1
   components:
     - name: podinfo
       description: "Tiny web application that showcases best practices of running microservices"
