@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.6](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/compare/v0.0.5...v0.0.6) (2023-09-08)
+
+
+### Features
+
+* add client secret and pod label for wiring up keycloak and authservice in front of podinfo ([65307f0](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/commit/65307f07ae291b3611e45c6f7b55362d9ce96fcd))
+
 ## [0.0.5](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/compare/v0.0.4...v0.0.5) (2023-09-08)
 
 
