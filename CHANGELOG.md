@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.7](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/compare/v0.0.6...v0.0.7) (2023-09-08)
+
+
+### Miscellaneous Chores
+
+* upgrade podinfo chart version ([b7683bb](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/commit/b7683bb4052b65eda1e5ee7a4745964be3585cc6))
+
 ## [0.0.6](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/compare/v0.0.5...v0.0.6) (2023-09-08)
 
 
