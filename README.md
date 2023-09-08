@@ -7,3 +7,10 @@ Zarf Package of Podinfo meant to be used as a reference for how to package and d
 
 ## Contributor Guide
 See [CONTRIBUTING.md](CONTRIBUTING.md)
+
+## Roadmap
+
+1. MVP - just get it working
+2. Add support for customizing the domain
+3. ???
+4. Profit

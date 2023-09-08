@@ -1,5 +1,10 @@
+# Values file for Podinfo
+
 istio:
   enabled: true
+  podinfo:
+    gateways:
+      - istio-system/tenant
 image:
   repository: "###ZARF_CONST_IMAGE_REPO###"
   tag: "###ZARF_CONST_IMAGE_VERSION###"
