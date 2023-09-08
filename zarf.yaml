@@ -19,10 +19,9 @@
       charts:
         - name: podinfo
           namespace: podinfo
-          localPath: podinfo-main/chart
-#          url: "###ZARF_PKG_TMPL_CHART_REPO###"
+          url: "###ZARF_PKG_TMPL_CHART_REPO###"
           version: "###ZARF_PKG_TMPL_CHART_VERSION###"
-#          gitPath: chart
+          gitPath: chart
           valuesFiles:
             - values.yaml
       images:

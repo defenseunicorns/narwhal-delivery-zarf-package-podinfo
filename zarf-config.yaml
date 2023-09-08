@@ -6,7 +6,7 @@ package:
       # x-release-please-end
       CHART_REPO: https://repo1.dso.mil/big-bang/apps/sandbox/podinfo.git
       # renovate: datasource=git-tags depName=https://repo1.dso.mil/big-bang/apps/sandbox/podinfo.git versioning=loose
-      CHART_VERSION: 6.0.0-bb.7
+      CHART_VERSION: 6.0.0-bb.8
       IMAGE_REPO: ghcr.io/stefanprodan/podinfo
       # renovate: datasource=github-tags depName=stefanprodan/podinfo
       IMAGE_VERSION: 6.4.1
