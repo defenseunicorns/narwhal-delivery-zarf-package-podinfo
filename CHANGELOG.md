@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.0.5](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/compare/v0.0.4...v0.0.5) (2023-09-08)
+
+
+### Bug Fixes
+
+* use correct istio gateway ([cef0537](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/commit/cef053748a695eb7f56d23613dde0c4006652ecd))
+
+
+### Documentation
+
+* add "roadmap" to readme ([cef0537](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/commit/cef053748a695eb7f56d23613dde0c4006652ecd))
+* improve README.md and add CONTRIBUTING.md ([#10](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/issues/10)) ([3f1fa4e](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/commit/3f1fa4e6cc1526f9c8b274e8251a503bec32a14f))
+
 ## [0.0.4](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/compare/v0.0.3...v0.0.4) (2023-09-08)
 
 
