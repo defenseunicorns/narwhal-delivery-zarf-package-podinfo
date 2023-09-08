@@ -26,3 +26,12 @@
             - values.yaml
       images:
         - "###ZARF_PKG_TMPL_IMAGE_REPO###:###ZARF_PKG_TMPL_IMAGE_VERSION###"
+    - name: pepr-create-client-secret
+      description: "Creates the client secret that Pepr needs to wire up Keycloak/Authservice"
+      required: true
+      manifests:
+        - name: pepr-create-client-secret
+          namespace: podinfo
+          noWait: false
+          files:
+            - pepr-create-client-secret.yaml

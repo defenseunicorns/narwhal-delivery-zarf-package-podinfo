@@ -1,10 +1,14 @@
 # Values file for Podinfo
 
+image:
+  repository: "###ZARF_CONST_IMAGE_REPO###"
+  tag: "###ZARF_CONST_IMAGE_VERSION###"
+
+podLabels:
+  protect: keycloak
+
 istio:
   enabled: true
   podinfo:
     gateways:
       - istio-system/tenant
-image:
-  repository: "###ZARF_CONST_IMAGE_REPO###"
-  tag: "###ZARF_CONST_IMAGE_VERSION###"
