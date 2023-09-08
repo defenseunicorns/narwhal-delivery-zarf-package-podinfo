@@ -2,7 +2,7 @@ package:
   create:
     set:
       # x-release-please-start-version
-      PACKAGE_VERSION: 0.0.4
+      PACKAGE_VERSION: 0.0.5
       # x-release-please-end
       CHART_REPO: https://repo1.dso.mil/big-bang/apps/sandbox/podinfo.git
       # renovate: datasource=git-tags depName=https://repo1.dso.mil/big-bang/apps/sandbox/podinfo.git versioning=loose
