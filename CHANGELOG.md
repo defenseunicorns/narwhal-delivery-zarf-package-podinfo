@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.0.4](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/compare/v0.0.3...v0.0.4) (2023-09-08)
+
+
+### Bug Fixes
+
+* switch back to upstream podinfo chart now that it has the fix for gluon ([62cfb34](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/commit/62cfb34ab6e08036a1903c01c1554bf2b5de139c))
+
+
+### Miscellaneous Chores
+
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v36.88.1 ([#8](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/issues/8)) ([d185e4b](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/commit/d185e4b5dd1ce3acfd6d85d4096ff2bc7ffd3bc5))
+
 ## [0.0.3](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/compare/v0.0.2...v0.0.3) (2023-09-07)
 
 
