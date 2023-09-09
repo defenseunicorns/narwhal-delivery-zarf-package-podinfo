@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.9](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/compare/v0.0.8...v0.0.9) (2023-09-09)
+
+
+### Bug Fixes
+
+* podinfo namespace now with istio injection label ([fc99996](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/commit/fc9999649ec141192e16642528ec407605960346))
+
 ## [0.0.8](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/compare/v0.0.7...v0.0.8) (2023-09-08)
 
 
