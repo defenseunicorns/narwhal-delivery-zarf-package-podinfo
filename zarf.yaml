@@ -13,6 +13,15 @@
     - name: IMAGE_VERSION
       value: "###ZARF_PKG_TMPL_IMAGE_VERSION###"
   components:
+    - name: podinfo-namespace
+      description: "Namespace for podinfo"
+      required: true
+      manifests:
+        - name: podinfo-namespace
+          namespace: default
+          noWait: false
+          files:
+            - podinfo-namespace.yaml
     - name: podinfo
       description: "Tiny web application that showcases best practices of running microservices"
       required: true
