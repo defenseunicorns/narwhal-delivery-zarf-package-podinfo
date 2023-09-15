@@ -5,7 +5,7 @@ package:
       PACKAGE_VERSION: 0.0.9
       # x-release-please-end
       CHART_REPO: https://github.com/RothAndrew/repo1-podinfo-chart.git
-      # renovate: datasource=git-tags depName=https://github.com/RothAndrew/repo1-podinfo-chart.git versioning=loose
+      # renovate: datasource=git-tags depName=https://github.com/RothAndrew/repo1-podinfo-chart.git versioning=regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)-bb\\.(?<build>\\d+)$
       CHART_VERSION: 6.0.0-bb.11
       IMAGE_REPO: ghcr.io/stefanprodan/podinfo
       # renovate: datasource=github-tags depName=stefanprodan/podinfo
