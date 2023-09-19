@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.0.10](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/compare/v0.0.9...v0.0.10) (2023-09-19)
+
+
+### Miscellaneous Chores
+
+* **deps:** update all dependencies ([#16](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/issues/16)) ([6f159de](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/commit/6f159ded090b492e887d4eefcdcde4e953fd3ad8))
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v36.97.1 ([#19](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/issues/19)) ([69f5c67](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/commit/69f5c67436b144f06af57be32e1ab132bd4ede30))
+* Fix renovate versioning for big-bang-style versions ([725cdeb](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/commit/725cdeb0bdc39cadeeb6f5384a21c367f1827d84))
+* more renovate fixes ([e7589c0](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/commit/e7589c07ff7b8acd80474cf375e1cc83b25b7b3f))
+* update renovate depName for chart version ([#17](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/issues/17)) ([7479193](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/commit/747919316eb6e6cb50ac8d950d73cc720c96bcbb))
+
 ## [0.0.9](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/compare/v0.0.8...v0.0.9) (2023-09-09)
 
 
