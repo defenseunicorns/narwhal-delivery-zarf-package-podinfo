@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.12](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/compare/v0.0.11...v0.0.12) (2023-09-22)
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency https://github.com/rothandrew/repo1-podinfo-chart.git to v6.0.0-bb.13 ([#22](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/issues/22)) ([cfccef7](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/commit/cfccef7ae252bfa43c5448dccff8d12ada696d3a))
+
 ## [0.0.11](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/compare/v0.0.10...v0.0.11) (2023-09-22)
 
 
