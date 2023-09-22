@@ -2,7 +2,7 @@ package:
   create:
     set:
       # x-release-please-start-version
-      PACKAGE_VERSION: 0.0.10
+      PACKAGE_VERSION: 0.0.11
       # x-release-please-end
       CHART_REPO: https://github.com/RothAndrew/repo1-podinfo-chart.git
       # renovate: datasource=git-tags depName=https://github.com/RothAndrew/repo1-podinfo-chart.git versioning=regex:^(?<major>\d+)\.(?<minor>\d+)\.(?<patch>\d+)-bb\.(?<build>\d+)$
