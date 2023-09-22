@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.11](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/compare/v0.0.10...v0.0.11) (2023-09-22)
+
+
+### Miscellaneous Chores
+
+* **deps:** update all dependencies ([#20](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/issues/20)) ([7a2d341](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/commit/7a2d3413e691e8cd37df776b7a1de944d6cbdac7))
+
 ## [0.0.10](https://github.com/defenseunicorns/narwhal-delivery-zarf-package-podinfo/compare/v0.0.9...v0.0.10) (2023-09-19)
 
 
