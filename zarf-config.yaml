@@ -9,4 +9,4 @@ package:
       CHART_VERSION: 6.0.0-bb.13
       IMAGE_REPO: ghcr.io/stefanprodan/podinfo
       # renovate: datasource=github-tags depName=stefanprodan/podinfo
-      IMAGE_VERSION: 6.4.1
+      IMAGE_VERSION: 6.5.1
