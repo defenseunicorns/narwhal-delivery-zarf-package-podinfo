@@ -6,7 +6,7 @@ image:
 
 podLabels:
   protect: keycloak
-    
+
 tls:
   certPath: "###ZARF_VAR_CERT_FILE###"
 
