@@ -6,9 +6,15 @@ image:
 
 podLabels:
   protect: keycloak
+    
+tls:
+  certPath: "###ZARF_VAR_CERT_FILE###"
 
+domain: "###ZARF_VAR_DOMAIN###"
 istio:
   enabled: true
   podinfo:
     gateways:
       - istio-system/tenant
+    hosts:
+      - "###ZARF_VAR_SUBDOMAIN###.###ZARF_VAR_DOMAIN###"
