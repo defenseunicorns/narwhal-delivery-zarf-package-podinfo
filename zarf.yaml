@@ -20,7 +20,7 @@
       default: podinfo
       prompt: false
     - name: CERT_FILE
-      default: /data/cert
+      default: /data/cert/tls.cert
   components:
     - name: podinfo-namespace
       description: "Namespace for podinfo"
