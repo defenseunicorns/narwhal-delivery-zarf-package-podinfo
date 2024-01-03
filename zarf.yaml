@@ -12,6 +12,15 @@
       value: "###ZARF_PKG_TMPL_IMAGE_REPO###"
     - name: IMAGE_VERSION
       value: "###ZARF_PKG_TMPL_IMAGE_VERSION###"
+  variables:
+    - name: DOMAIN
+      default: bigbang.dev
+      prompt: false
+    - name: SUBDOMAIN
+      default: podinfo
+      prompt: false
+    - name: CERT_FILE
+      default: /data/cert/tls.cert
   components:
     - name: podinfo-namespace
       description: "Namespace for podinfo"
