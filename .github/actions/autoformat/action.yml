@@ -29,26 +29,26 @@ runs:
         GITHUB_OWNER: ${{ github.event.client_payload.github.payload.repository.owner.login || github.repository_owner }}
 
     - name: Init gopath cache
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: "${{ github.workspace }}/.cache/go"
         key: "gopath|${{ hashFiles('.tool-versions') }}|${{ hashFiles('go.sum') }}"
 
     - name: Init gobuild cache
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: "${{ github.workspace }}/.cache/go-build"
         key: "gobuild|${{ hashFiles('.tool-versions') }}|${{ hashFiles('go.sum') }}"
 
     - name: Init zarf cache
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: "${{ github.workspace }}/.cache/.zarf-cache"
         key: "zarf|${{ hashFiles('.tool-versions') }}"
 
     - name: Init docker cache
       id: init-docker-cache
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: "${{ github.workspace }}/.cache/docker"
         key: "docker|${{ hashFiles('.env') }}"
@@ -70,7 +70,7 @@ runs:
       run: echo "tf_version=$(grep 'terraform ' .tool-versions)" >> $GITHUB_OUTPUT
 
     - name: Init Terraform Cache
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: "${{ github.workspace }}/.cache/.terraform.d/plugin-cache"
         key: "${{ runner.os }}-terraform-plugins|${{ steps.get_tf_version.outputs.tf_version }}|${{ hashFiles('examples/complete/providers.tf') }}"
@@ -82,7 +82,7 @@ runs:
         make autoformat fix-cache-permissions || true
 
     - name: Commit and push changes
-      uses: stefanzweifel/git-auto-commit-action@v4
+      uses: stefanzweifel/git-auto-commit-action@v5
       with:
         skip_checkout: true
 
